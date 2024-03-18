@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title> 
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Added Font Awesome CSS -->
+
+</head>
+<body>
+    <form action="" onsubmit="return false">
+          <div class="lab_inp">
+            <label for="fName">Имя</label>
+            <input
+            type="text"
+            name="fName"
+            id="name-input"
+            placeholder="Введите Ваше имя"
+            pattern="[A-Za-zА-Яа-яЁё\s]+"
+            title="Можно использовать только буквы"
+            required
+            />
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <div id="name-validation" style="color: red; font-size: 12px;"></div>
+          </div>
+          <div class="lab_inp">
+            <label for="fName">Пароль</label>
+            <input
+              type="password"
+              name="fName"
+              id="password"
+              placeholder="Введите пароль"
+            />
+            <i class="fa fa-eye-slash password-icon" aria-hidden="true"></i> 
+          </div>
+
+          <div class="lab_inp">
+            <label for="sName">Email</label>
+            <input
+              type="email"
+              name="sName"
+              id="email" 
+              placeholder="example@mail.com"
+             required>
+             <i class="fa fa-envelope" aria-hidden="true"></i>
+          </div>
+
+          <div class="lab_inp">
+            <label for="sName">Телефон</label>
+            <input
+            type="tel"
+            name="sName"
+            id="phone-input"
+            placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _"
+            pattern="\+?[0-9\s\-\(\)]+"
+            required
+          />
+          <i class="fa fa-phone"></i>
+          </div>
+
+        <div class="sign">
+          <div class="twoBtn">
+            <input type="submit" value="Зарегистрироваться" />
+            <button type="reset">Сбросить</button>
+          </div>
+        </div>
+      </form>
+</body>
+<script src="./js.js"></script>
+</html>
